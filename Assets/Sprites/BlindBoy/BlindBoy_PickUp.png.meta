@@ -1,0 +1,1017 @@
+fileFormatVersion: 2
+guid: 7bc4c9a74ad2c2c46a686863ea3bc292
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1930
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c1cdae21ba24b449604662b856193e
+      internalID: 536819664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_1
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1931
+        width: 51
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70046b97e87fe274c98eccf8d2353d08
+      internalID: -581236668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_2
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1931
+        width: 51
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e8aac75221ba44e8a7e6e4892697ec
+      internalID: -569195959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_3
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1931
+        width: 51
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386a1622a16a28443acbb04fd2487680
+      internalID: -1388558625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_4
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1930
+        width: 50
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634413a5ae9d7bf4b8bcd43b7a24cfb2
+      internalID: 1195436708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_5
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1929
+        width: 49
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047e971e71c6b55468b2a3ba49b3f069
+      internalID: 596759453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_6
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1929
+        width: 50
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072477696299990418e0708e631998b0
+      internalID: -1762983643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_7
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1928
+        width: 54
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fa034268729474c8329d6d1a0aea2a
+      internalID: -1861052527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_8
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1671
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb97035d4f3a2046b25f2bd9669cb37
+      internalID: -1278297474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_9
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1671
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c559632cbc96db04d870638662a5d69d
+      internalID: 1405484952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_10
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1671
+        width: 54
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb2e9b79d980fc48b74eed86c4d2f03
+      internalID: 1815925022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_11
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1671
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6306e3468c57a5e4f85291de66b6305e
+      internalID: 1199404891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_12
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1672
+        width: 49
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fe037d5d8601747a11518bb71e4f33
+      internalID: -744191057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_13
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1673
+        width: 48
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8298ddab2b82f3e42a560cc8452b09de
+      internalID: -1892145468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_14
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1673
+        width: 49
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c49830acd231a34c9e8f605d38c2f8f
+      internalID: 1960732892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_15
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 1674
+        width: 50
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9fcb2fb05f1714bba06854d99404d6
+      internalID: 106722992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_16
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1418
+        width: 50
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab28af4a99523b4fbffef7fcff3f614
+      internalID: -265580112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_17
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1418
+        width: 50
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e169b43e50b5d6459d6b466dd5b154d
+      internalID: 763630410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_18
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1418
+        width: 50
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1903c300b58ba244fbef03344dd3835a
+      internalID: -606553623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_19
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1418
+        width: 50
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77209ce55275a1468c8ee142e538e9f
+      internalID: 2023881206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_20
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1418
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b71dd5f36c63b743854e40f37734108
+      internalID: -227909697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_22
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1418
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed215f5661d5b0144a17013fa559baee
+      internalID: 1893492862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_23
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 1418
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7d682120a9f1f42b69783507f30e86
+      internalID: 778324009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_24
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1418
+        width: 51
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f72f59e28349fe4fbe484a5b16f9cbc
+      internalID: -1686321453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_25
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1162
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bba5ea3f662c246a9fefd0a8d97512
+      internalID: 189795402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_26
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1162
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebb5dca2c822b540bb3311290b8650c
+      internalID: -892103743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_27
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1162
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2957167444007224ea320354a79100e9
+      internalID: -1156833054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_28
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1162
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8367456f1cbf046a23c3688e5e22e2
+      internalID: 1402084250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_29
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1162
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a259290dbe4702a46b1fb44cb304fe05
+      internalID: -1908569956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_30
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1162
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb8f7f8f4eebf64088ef4a976d1c3cc
+      internalID: 130196464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_31
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1162
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa5caf9b71aaae459b7bd0fb02e0c54
+      internalID: 1363915469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_32
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 1162
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff6f90bfb63dee438cf9c4ced22a706
+      internalID: -456965218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_33
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 906
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06531a286dbe8914c801c055e3eb808a
+      internalID: -2116186956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_34
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 906
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19d214e1abc0ed498475a42de11dd69
+      internalID: -2070468053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_35
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 906
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab97ae6d74b09541987c30c47bf124a
+      internalID: 478054981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_36
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 906
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca13439aa1a75e4b932ecdb32bf456f
+      internalID: -1448545652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_37
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 906
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fad7885908b1e45aff35b2e930e826
+      internalID: 1708294887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_38
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 906
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289b42b27dd4555449d7c622f535c3ef
+      internalID: 2138864646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_39
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 906
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d2c3ec92df8f742ba074aa257debfa
+      internalID: 1319144528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_40
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 906
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a8b85ef8f85574d8e9e5bedae3c428
+      internalID: 1824242712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlindBoy_PickUp_41
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 650
+        width: 51
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66bebd46570d73743b5de75f4a2eb2a9
+      internalID: -1169759464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BlindBoy_PickUp_0: 536819664
+      BlindBoy_PickUp_1: -581236668
+      BlindBoy_PickUp_10: 1815925022
+      BlindBoy_PickUp_11: 1199404891
+      BlindBoy_PickUp_12: -744191057
+      BlindBoy_PickUp_13: -1892145468
+      BlindBoy_PickUp_14: 1960732892
+      BlindBoy_PickUp_15: 106722992
+      BlindBoy_PickUp_16: -265580112
+      BlindBoy_PickUp_17: 763630410
+      BlindBoy_PickUp_18: -606553623
+      BlindBoy_PickUp_19: 2023881206
+      BlindBoy_PickUp_2: -569195959
+      BlindBoy_PickUp_20: -227909697
+      BlindBoy_PickUp_21: -2024721665
+      BlindBoy_PickUp_22: 1893492862
+      BlindBoy_PickUp_23: 778324009
+      BlindBoy_PickUp_24: -1686321453
+      BlindBoy_PickUp_25: 189795402
+      BlindBoy_PickUp_26: -892103743
+      BlindBoy_PickUp_27: -1156833054
+      BlindBoy_PickUp_28: 1402084250
+      BlindBoy_PickUp_29: -1908569956
+      BlindBoy_PickUp_3: -1388558625
+      BlindBoy_PickUp_30: 130196464
+      BlindBoy_PickUp_31: 1363915469
+      BlindBoy_PickUp_32: -456965218
+      BlindBoy_PickUp_33: -2116186956
+      BlindBoy_PickUp_34: -2070468053
+      BlindBoy_PickUp_35: 478054981
+      BlindBoy_PickUp_36: -1448545652
+      BlindBoy_PickUp_37: 1708294887
+      BlindBoy_PickUp_38: 2138864646
+      BlindBoy_PickUp_39: 1319144528
+      BlindBoy_PickUp_4: 1195436708
+      BlindBoy_PickUp_40: 1824242712
+      BlindBoy_PickUp_41: -1169759464
+      BlindBoy_PickUp_5: 596759453
+      BlindBoy_PickUp_6: -1762983643
+      BlindBoy_PickUp_7: -1861052527
+      BlindBoy_PickUp_8: -1278297474
+      BlindBoy_PickUp_9: 1405484952
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
