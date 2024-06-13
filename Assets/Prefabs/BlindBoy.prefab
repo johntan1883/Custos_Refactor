@@ -402,4 +402,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followPlayerPosition: {fileID: 0}
   movingSpeed: 4
-  stoppingDistance: 2
+  stoppingDistance: 1.1
