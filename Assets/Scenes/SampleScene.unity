@@ -1146,9 +1146,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 334366752264229001, guid: 250f364e3792e824084fd6dc9327b616, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -657954004, guid: 20418b2fe3934f44fba6502cb9137ae2, type: 3}
+    - target: {fileID: 334366752264229001, guid: 250f364e3792e824084fd6dc9327b616, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 334366752264229001, guid: 250f364e3792e824084fd6dc9327b616, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 334366752264229001, guid: 250f364e3792e824084fd6dc9327b616, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1417247499917479407, guid: 250f364e3792e824084fd6dc9327b616, type: 3}
       propertyPath: m_Name
       value: PressurePlate_Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218850385821885348, guid: 250f364e3792e824084fd6dc9327b616, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2503795930473782019, guid: 250f364e3792e824084fd6dc9327b616, type: 3}
       propertyPath: m_LocalPosition.x
