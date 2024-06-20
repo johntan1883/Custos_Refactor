@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8f5c4447e5c8f8d4e80a9315429df3b1
+guid: cb495ff3036cd1e47b356ab3d9db1db1
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -15,7 +15,7 @@ TextureImporter:
       213: -7416527737585426445
     second: Anim_3
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,11 +84,12 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -101,91 +102,92 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Anim_0
+      name: Toller_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 62
-        height: 124
+        width: 58
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c4b15e3e1779cc480800000000000000
-      internalID: -8877554250043548852
+      spriteID: d9ffffcd9e65da749bdcfab45991302d
+      internalID: -438428992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_1
+      name: Toller_1
       rect:
         serializedVersion: 2
-        x: 62
+        x: 66
         y: 0
-        width: 62
-        height: 124
+        width: 58
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1e58ff0392cdfa620800000000000000
-      internalID: 2787688763839448545
+      spriteID: ced4fc69f2d084e4385c634353404bbd
+      internalID: -1899734511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_2
+      name: Toller_2
       rect:
         serializedVersion: 2
-        x: 124
+        x: 128
         y: 0
-        width: 62
-        height: 124
+        width: 58
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: afe4395258159f9b0800000000000000
-      internalID: -5045912275189018886
+      spriteID: a2b609363bb36a043ba43f041898228a
+      internalID: -1064828393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_3
+      name: Toller_3
       rect:
         serializedVersion: 2
-        x: 186
+        x: 189
         y: 0
-        width: 62
-        height: 124
+        width: 58
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3ff936e2153331990800000000000000
-      internalID: -7416527737585426445
+      spriteID: c107740a7848e464eb2cef04d1daabc7
+      internalID: 907390976
       vertices: []
       indices: 
       edges: []
@@ -201,10 +203,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Anim_0: -8877554250043548852
-      Anim_1: 2787688763839448545
-      Anim_2: -5045912275189018886
-      Anim_3: -7416527737585426445
+      Toller_0: -438428992
+      Toller_1: -1899734511
+      Toller_2: -1064828393
+      Toller_3: 907390976
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

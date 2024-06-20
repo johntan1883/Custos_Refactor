@@ -69,4 +69,9 @@ public class BlindBoy : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireCube(interactPosition.position, interactRange);
     }
+
+    public void ReactToBellSFX()
+    {
+        Debug.Log("Boy run away");
+    }
 }
