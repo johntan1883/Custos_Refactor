@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using TreeEditor;
 using UnityEngine;
 
 public class EnemyToller : MonoBehaviour
 {
+    [Header("Ring Bell")]
     [SerializeField] private BlindBoy blindBoy;
     [SerializeField] private float minTime = 5f;
     [SerializeField] private float maxTime = 10f;
@@ -37,7 +39,7 @@ public class EnemyToller : MonoBehaviour
     {
         if (blindBoy != null)
         {
-            blindBoy.ReactToBellSFX();
+            blindBoy.ReactToBellSFX(transform.position);
         }
     }
 

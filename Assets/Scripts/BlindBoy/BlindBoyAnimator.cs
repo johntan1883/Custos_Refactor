@@ -6,6 +6,7 @@ public class BlindBoyAnimator : MonoBehaviour
 {
     private const string IS_FOLLOWING = "IsFollowing";
     private const string IS_MOVING = "IsMoving";
+    private const string PICK_UP = "PickUp";
 
     [SerializeField] private BlindBoyInteractable blindBoy;
 

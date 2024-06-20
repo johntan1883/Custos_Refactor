@@ -13,6 +13,13 @@ public class BlindBoy : MonoBehaviour
     [SerializeField] private Transform grabPoint;
     private GameObject grabbedObject;
 
+    [Header("Run Away Settings")]
+    [SerializeField] private float runSpeed = 5f;
+    [SerializeField] private float runDuration = 2f;
+
+    private Vector2 runDirection;
+    private bool isRunningAway = false;
+
     public void StartInteractingWithObject()
     {
         Collider2D closestCollider = FindClosestInteractable();
@@ -70,8 +77,30 @@ public class BlindBoy : MonoBehaviour
         Gizmos.DrawWireCube(interactPosition.position, interactRange);
     }
 
-    public void ReactToBellSFX()
+    public void ReactToBellSFX(Vector2 soundSourcePosition)
     {
-        Debug.Log("Boy run away");
+        if (!isRunningAway)
+        {
+            Vector2 directionToSound = (soundSourcePosition - (Vector2)transform.position).normalized;
+            runDirection = -directionToSound;
+            StartCoroutine(RunAway());
+        }
+        
+    }
+
+    private IEnumerator RunAway()
+    {
+        isRunningAway = true;
+        float timer = 0f;
+
+        while (timer < runDuration)
+        {
+            transform.Translate(runDirection * runSpeed * Time.deltaTime);
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        isRunningAway = false;
+        Debug.Log("Boy Stopped RUNNING");
     }
 }

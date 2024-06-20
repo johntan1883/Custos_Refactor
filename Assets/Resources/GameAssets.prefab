@@ -46,4 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BarkToFollowSoundClip: {fileID: 8300000, guid: 8d10ced49b092b643a664fa78f7bc13f, type: 3}
   BarkToInteractSoundClip: {fileID: 8300000, guid: 14708c26ac9840e4387ef5053c3cff13, type: 3}
-  TollerBellSoundClip: {fileID: 8300000, guid: b59b5f3060800144bb9bca7a9e46225c, type: 3}
+  TollerBellSoundClip: {fileID: 8300000, guid: 21803c735891d6146bdc87e1ecef5b37, type: 3}
