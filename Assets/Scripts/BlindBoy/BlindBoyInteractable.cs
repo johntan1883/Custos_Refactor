@@ -39,12 +39,14 @@ public class BlindBoyInteractable : MonoBehaviour, IInteractable
                 Player.Instance.OnBlindBoyReachedLocation();
             }
         }
+
         HandleFlip();
     }
 
     public void Interact(Player player)
     {
         isFollowing = !isFollowing;
+        isMoving = isFollowing;
     }
 
     private void HandleMovement(Transform target)

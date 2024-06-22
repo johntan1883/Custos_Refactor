@@ -22,4 +22,15 @@ public class BlindBoyAnimator : MonoBehaviour
         animator.SetBool(IS_FOLLOWING, blindBoy.IsFollowing());
         animator.SetBool(IS_MOVING, blindBoy.IsMoving());
     }
+
+    public void TriggerPickUpAnimation()
+    {
+        animator.SetTrigger(PICK_UP);
+    }
+
+    public void ResetPickUpAnimation()
+    {
+        animator.ResetTrigger(PICK_UP);
+    }
+
 }

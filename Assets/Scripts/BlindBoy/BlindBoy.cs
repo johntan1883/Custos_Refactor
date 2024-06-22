@@ -19,6 +19,7 @@ public class BlindBoy : MonoBehaviour
 
     private Vector2 runDirection;
     private bool isRunningAway = false;
+    [SerializeField] private BlindBoyAnimator blindBoyAnimator;
 
     public void StartInteractingWithObject()
     {
@@ -60,6 +61,10 @@ public class BlindBoy : MonoBehaviour
             grabbedObject.transform.position = grabPoint.position;
             grabbedObject.transform.SetParent(grabPoint);
             Debug.Log(grabbedObject + "is set to child");
+
+            blindBoyAnimator.TriggerPickUpAnimation();
+
+            
         }
         else
         {
