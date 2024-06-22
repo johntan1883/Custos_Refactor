@@ -5,11 +5,11 @@ using UnityEngine.Rendering;
 
 public class DoorInteractPressurePlate : MonoBehaviour
 {
-    [SerializeField] private GameObject doorGameObject;
-    [SerializeField] private GameObject doorVisual;
-    
-    private IDoor doorGO;
-    private IDoor doorV;
+    [SerializeField] private GameObject[] doorGameObjects;
+    [SerializeField] private GameObject[] doorVisuals;
+
+    private IDoor[] doorGOs;
+    private IDoor[] doorVs;
 
     private float timer;
 
@@ -18,8 +18,18 @@ public class DoorInteractPressurePlate : MonoBehaviour
 
     private void Awake()
     {
-        doorGO = doorGameObject.GetComponent<IDoor>();
-        doorV = doorVisual.GetComponent<IDoor>();
+        doorGOs = new IDoor[doorGameObjects.Length];
+        doorVs = new IDoor[doorVisuals.Length];
+
+        for (int i = 0; i < doorGameObjects.Length; i++)
+        {
+            doorGOs[i] = doorGameObjects[i].GetComponent<IDoor>();
+        }
+
+        for (int i = 0; i < doorVisuals.Length; i++)
+        {
+            doorVs[i] = doorVisuals[i].GetComponent<IDoor>();
+        }
     }
 
     private void Update()
@@ -41,14 +51,28 @@ public class DoorInteractPressurePlate : MonoBehaviour
 
     private void OpenDoors()
     {
-        doorGO.OpenDoor();
-        doorV.OpenDoor();
+        foreach (var door in doorGOs)
+        {
+            door.OpenDoor();
+        }
+
+        foreach (var door in doorVs)
+        {
+            door.OpenDoor();
+        }
     }
 
     private void CloseDoors()
     {
-        doorGO.CloseDoor();
-        doorV.CloseDoor();
+        foreach (var door in doorGOs)
+        {
+            door.CloseDoor();
+        }
+
+        foreach (var door in doorVs)
+        {
+            door.CloseDoor();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -77,5 +101,14 @@ public class DoorInteractPressurePlate : MonoBehaviour
         }
     }
 
+    public bool CheckIsOnPlate()
+    {
+        if (isPlayerOnPlate || isBlindBoyOnPlate)
+        {
+            return true;
+        }
+
+        return false;
+    }
 
 }
