@@ -35,6 +35,7 @@ public class BlindBoyInteractable : MonoBehaviour, IInteractable
             HandleMovement(soundLocation);
             if (IsAtLocation(soundLocation))
             {
+                Debug.Log("Boy reached the sound location");
                 StopMoving();
                 Player.Instance.OnBlindBoyReachedLocation();
             }

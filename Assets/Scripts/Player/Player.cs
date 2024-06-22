@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask soundLayerMask;
     [SerializeField] private GameObject lastBarkLocationPrefab;
     [SerializeField] private BlindBoy blindBoy;
+    [SerializeField] private BlindBoyInteractable blindBoyInteractable;
     private GameObject lastBarkLocationInstance;
     private AudioClip barkToFollowSoundClip;
     private AudioClip barkToInteractSoundClip;
@@ -188,24 +189,24 @@ public class Player : MonoBehaviour
 
     private void BarkToFollow()
     {
-        if (gameInput.GetBarkToFollowInput())
+        if (!blindBoyInteractable.IsFollowing())
         {
-            SoundFXManager.Instance.PlaySoundFXClip(barkToFollowSoundClip, transform, 0.3f);
-
-            if (lastBarkLocationInstance != null)
+            if (gameInput.GetBarkToFollowInput())
             {
-                Destroy(lastBarkLocationInstance);
-            }
+                SoundFXManager.Instance.PlaySoundFXClip(barkToFollowSoundClip, transform, 0.3f);
 
-            lastBarkLocationInstance = Instantiate(lastBarkLocationPrefab, transform.position, Quaternion.identity);
-
-            Collider2D[] colliderArray = Physics2D.OverlapBoxAll(transform.position, soundDetectArea, 0f, soundLayerMask);
-
-            foreach (Collider2D collider in colliderArray)
-            {
-                if (collider.TryGetComponent(out BlindBoyInteractable blindBoy))
+                if (lastBarkLocationInstance != null)
                 {
-                    if (collider.TryGetComponent(out BlindBoyInteractable blindboy))
+                    Destroy(lastBarkLocationInstance);
+                }
+
+                lastBarkLocationInstance = Instantiate(lastBarkLocationPrefab, transform.position, Quaternion.identity);
+
+                Collider2D[] colliderArray = Physics2D.OverlapBoxAll(transform.position, soundDetectArea, 0f, soundLayerMask);
+
+                foreach (Collider2D collider in colliderArray)
+                {
+                    if (collider.TryGetComponent(out BlindBoyInteractable blindBoy))
                     {
                         blindBoy.MoveToSoundLocation(lastBarkLocationInstance.transform);
                     }
