@@ -261,7 +261,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 7368777604557325880}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a8a02e0f00fbaa64a9d0cacc9699d4a6, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -356,6 +356,7 @@ MonoBehaviour:
     m_Bits: 256
   lastBarkLocationPrefab: {fileID: 3985648657715757348, guid: 8880c2b14d3d46c4ab6735fba33fd550, type: 3}
   blindBoy: {fileID: 0}
+  blindBoyInteractable: {fileID: 0}
   gameInput: {fileID: 0}
 --- !u!1 &8898745664924297678
 GameObject:
