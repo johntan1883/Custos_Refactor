@@ -10,7 +10,7 @@ public class DoorInteractAutomatic : MonoBehaviour
     private IDoor doorV;
 
     private bool isBlindBoyInRange = false;
-    private bool isKeyInRange = false;
+    private bool canOpenDoor = false;
     private GameObject keyGameObject;
 
     private void Awake()
@@ -19,7 +19,12 @@ public class DoorInteractAutomatic : MonoBehaviour
         doorV = doorVisual.GetComponent<IDoor>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void Update()
+    {
+        
+    }
+
+    private void OnTriggerStay2D(Collider2D collider)
     {
         if (collider.GetComponent<BlindBoy>() != null)
         {
@@ -28,8 +33,9 @@ public class DoorInteractAutomatic : MonoBehaviour
 
         if (collider.GetComponent<KeyInteractable>() != null)
         {
-            isKeyInRange = true;
+            //isKeyInRange = true;
             keyGameObject = collider.gameObject;
+            canOpenDoor = keyGameObject.GetComponent<KeyInteractable>().BlindBoyIsHoldingKey();
         }
 
         CheckAndOpenDoor();
@@ -37,7 +43,7 @@ public class DoorInteractAutomatic : MonoBehaviour
 
     private void CheckAndOpenDoor()
     {
-        if(isBlindBoyInRange && isKeyInRange)
+        if (isBlindBoyInRange && canOpenDoor)
         {
             doorGO.OpenDoor();
             doorV.OpenDoor();

@@ -6,6 +6,10 @@ public class KeyInteractable : MonoBehaviour, IInteractable
 {
     private PlayerInteractablUI playerInteractablUI;
 
+    private bool blindBoyIsHoldingKey;
+
+    public bool BlindBoyIsHoldingKey() => blindBoyIsHoldingKey;
+
     private void Awake()
     {
         playerInteractablUI = GetComponent<PlayerInteractablUI>();        
@@ -13,6 +17,7 @@ public class KeyInteractable : MonoBehaviour, IInteractable
     public void BlindBoyInteract(BlindBoy blindBoy)
     {
         blindBoy.GrabAndDrop(gameObject);
+        blindBoyIsHoldingKey = true;
     }
 
     public void Interact(Player player)
