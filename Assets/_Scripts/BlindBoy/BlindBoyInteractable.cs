@@ -13,6 +13,7 @@ public class BlindBoyInteractable : MonoBehaviour, IInteractable
     private bool isMoving;
     private bool isMovingToSound;
     private Transform soundLocation;
+    private PlayerInteractablUI playerInteractablUI;
 
     public bool IsFollowing() => isFollowing;
     public bool IsMoving() => isMoving;
@@ -22,6 +23,11 @@ public class BlindBoyInteractable : MonoBehaviour, IInteractable
         soundLocation = location;
         isMovingToSound = true;
         isMoving = true;
+    }
+
+    private void Awake()
+    {
+        playerInteractablUI = GetComponent<PlayerInteractablUI>();
     }
 
     private void Update()
@@ -48,6 +54,8 @@ public class BlindBoyInteractable : MonoBehaviour, IInteractable
     {
         isFollowing = !isFollowing;
         isMoving = isFollowing;
+
+        playerInteractablUI.HideInteractableIcon();
     }
 
     private void HandleMovement(Transform target)
@@ -105,5 +113,10 @@ public class BlindBoyInteractable : MonoBehaviour, IInteractable
     public void BlindBoyInteract(BlindBoy blindBoy)
     {
         
+    }
+
+    public void ShowInteractableIcon()
+    {
+        playerInteractablUI.ShowInteractableIcon();
     }
 }
