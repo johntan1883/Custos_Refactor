@@ -180,6 +180,16 @@ public class Player : MonoBehaviour
         } 
         else
         {
+            if (grabbedObject.TryGetComponent(out KeyInteractable keyInteractable))
+            {
+                keyInteractable.ShowInteractableIcon();
+            }
+
+            if (grabbedObject.TryGetComponent(out BlindBoyInteractable blindBoyInteractable))
+            {
+                blindBoyInteractable.ShowInteractableIcon();
+            }
+
             grabbedObject.GetComponent<Rigidbody2D>().isKinematic = false;
             grabbedObject.transform.SetParent(null);
             grabbedObject = null;

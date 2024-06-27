@@ -21,6 +21,7 @@ public class BlindBoy : MonoBehaviour
     private bool isRunningAway = false;
     [SerializeField] private BlindBoyAnimator blindBoyAnimator;
 
+
     public void StartInteractingWithObject()
     {
         Collider2D closestCollider = FindClosestInteractable();
