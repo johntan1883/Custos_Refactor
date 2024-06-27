@@ -29,8 +29,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3986952652578058882}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -657954004, guid: 20418b2fe3934f44fba6502cb9137ae2, type: 3}
+  m_Sprite: {fileID: 367602651, guid: e1a298c3ce02d6b4d982d666a9e0eaa0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -197,7 +197,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.02, y: 0.66}
+  m_Size: {x: 1.73, y: 0.88}
   m_EdgeRadius: 0
 --- !u!114 &3064467269239105550
 MonoBehaviour:
@@ -211,5 +211,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d884a1ebb770cc45b312e7091b9bc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorGameObjects: []
-  doorVisuals: []
+  doorGameObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  doorVisuals:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
