@@ -9,7 +9,7 @@ public class ButtonFunctions : MonoBehaviour
     public GameObject PauseMenuCanvas;
     public static bool Paused = false; // Default to not paused
     public GameObject Player;
-
+    public GameObject CreditsCanvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +48,11 @@ public class ButtonFunctions : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
+    public void LevelOne()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+
     private void TogglePauseMenu()
     {
         if (Paused)
@@ -64,5 +69,14 @@ public class ButtonFunctions : MonoBehaviour
             Time.timeScale = 0f;
             Paused = true;
         }
+    }
+
+    public void Credits()
+    {
+        CreditsCanvas.SetActive(true);
+    }
+    public void BackControls()
+    {
+        CreditsCanvas.SetActive(false);
     }
 }
