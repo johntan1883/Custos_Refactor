@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
     private AudioClip barkToFollowSoundClip;
     private AudioClip barkToInteractSoundClip;
 
-    [SerializeField] private GameInput gameInput;
+    private GameInput gameInput;
 
     public static Player Instance { get; private set; }
 
@@ -61,6 +61,8 @@ public class Player : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        gameInput = FindAnyObjectByType<GameInput>();
     }
 
     void Start()
@@ -72,13 +74,16 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        HandleMovement();
-        Flip();
-        CheckGrounded();
-        HandleJump();
-        Interact();
-        BarkToFollow();
-        BarkToInteract();
+        if (!PauseMenu.IsPaused)
+        {
+            HandleMovement();
+            Flip();
+            CheckGrounded();
+            HandleJump();
+            Interact();
+            BarkToFollow();
+            BarkToInteract();
+        }
     }
 
     private void CheckGrounded()

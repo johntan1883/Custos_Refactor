@@ -12,6 +12,7 @@ public class GameInput : MonoBehaviour
         //Initial the PlayerInputActions Class and enable the input system
         playerInputActions = new PlayerInputActions();
         playerInputActions.Player.Enable();
+        playerInputActions.PauseMenu.Enable();
     }
 
     //Returning the x value of move input of player
@@ -53,5 +54,10 @@ public class GameInput : MonoBehaviour
     public bool GetBarkToInteractInput()
     {
         return playerInputActions.Player.BarkToInteract.WasPressedThisFrame();
+    }
+
+    public bool GetPauseInput()
+    {
+        return playerInputActions.PauseMenu.Pause.WasPressedThisFrame();
     }
 }
