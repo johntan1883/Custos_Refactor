@@ -211,11 +211,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d884a1ebb770cc45b312e7091b9bc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorGameObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  doorVisuals:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  doorGameObjects: []
+  doorVisuals: []

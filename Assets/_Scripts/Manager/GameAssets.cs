@@ -18,4 +18,5 @@ public class GameAssets : MonoBehaviour
     public AudioClip BarkToFollowSoundClip;
     public AudioClip BarkToInteractSoundClip;
     public AudioClip TollerBellSoundClip;
+    public AudioClip CrateBreakSoundClip;
 }

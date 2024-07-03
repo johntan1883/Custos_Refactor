@@ -12,9 +12,11 @@ public class DoorInteractPressurePlate : MonoBehaviour
     private IDoor[] doorVs;
 
     private float timer;
+    private const float timeDuration = 0.5f;
 
     private bool isPlayerOnPlate = false;
     private bool isBlindBoyOnPlate = false;
+    private bool isCrateOnPlate = false;
 
     private void Awake()
     {
@@ -34,10 +36,10 @@ public class DoorInteractPressurePlate : MonoBehaviour
 
     private void Update()
     {
-        if (isPlayerOnPlate || isBlindBoyOnPlate)
+        if (CheckIsOnPlate())
         {
             OpenDoors();
-            timer = 0.5f; // Reset the timer each frame the character is on the plate
+            timer = timeDuration;
         }
         else
         {
@@ -77,38 +79,35 @@ public class DoorInteractPressurePlate : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.GetComponent<Player>() != null)
-        {
-            isPlayerOnPlate = true;
-        }
-
-        if (collider.GetComponent<BlindBoy>() != null)
-        {
-            isBlindBoyOnPlate = true;
-        }
+        CheckCollider(collider, true);
     }
 
     private void OnTriggerExit2D(Collider2D collider)
     {
+        CheckCollider(collider, false);
+    }
+
+    private void CheckCollider (Collider2D collider, bool isEntering)
+    {
         if (collider.GetComponent<Player>() != null)
         {
-            isPlayerOnPlate = false;
+            isPlayerOnPlate = isEntering;
         }
 
         if (collider.GetComponent<BlindBoy>() != null)
         {
-            isBlindBoyOnPlate = false;
+            isBlindBoyOnPlate = isEntering;
+        }
+
+        if (collider.GetComponent<Crate>() != null)
+        {
+            isCrateOnPlate = isEntering;
         }
     }
 
     public bool CheckIsOnPlate()
     {
-        if (isPlayerOnPlate || isBlindBoyOnPlate)
-        {
-            return true;
-        }
-
-        return false;
+        return isPlayerOnPlate || isBlindBoyOnPlate || isCrateOnPlate;
     }
 
 }

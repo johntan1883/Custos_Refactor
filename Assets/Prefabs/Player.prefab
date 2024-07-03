@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 7758108175757823949}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -348,7 +348,7 @@ MonoBehaviour:
   interactPosition: {fileID: 7789760859163494227}
   interactLayerMask:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 4352
   grabPoint: {fileID: 7313273295810490547}
   soundDetectArea: {x: 31.2, y: 25.9}
   soundLayerMask:
@@ -357,7 +357,6 @@ MonoBehaviour:
   lastBarkLocationPrefab: {fileID: 3985648657715757348, guid: 8880c2b14d3d46c4ab6735fba33fd550, type: 3}
   blindBoy: {fileID: 0}
   blindBoyInteractable: {fileID: 0}
-  gameInput: {fileID: 0}
 --- !u!1 &8898745664924297678
 GameObject:
   m_ObjectHideFlags: 0

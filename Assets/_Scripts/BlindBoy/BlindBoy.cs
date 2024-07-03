@@ -78,9 +78,9 @@ public class BlindBoy : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        //Overlapped interact box
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(interactPosition.position, interactRange);
+        ////Overlapped interact box
+        //Gizmos.color = Color.green;
+        //Gizmos.DrawWireCube(interactPosition.position, interactRange);
     }
 
     public void ReactToBellSFX(Vector2 soundSourcePosition)

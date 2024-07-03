@@ -7,14 +7,19 @@ public class EnemyToller : MonoBehaviour
 {
     [Header("Ring Bell")]
     [SerializeField] private BlindBoy blindBoy;
-    [SerializeField] private float minTime = 5f;
-    [SerializeField] private float maxTime = 10f;
+    [SerializeField] private float ringInterval = 5f;
+
+    private BlindBoyInteractable bindBoyInteractable;
 
     private AudioClip bellSFX;
 
     private void Start()
     {
         bellSFX = GameAssets.Instance.TollerBellSoundClip;
+
+        blindBoy = FindAnyObjectByType<BlindBoy>();
+
+        bindBoyInteractable = blindBoy.GetComponent<BlindBoyInteractable>();
         StartCoroutine(PlaySoundAtRandomIntervals());
     }
 
@@ -22,11 +27,13 @@ public class EnemyToller : MonoBehaviour
     {
         while (true)
         {
-            float waitTime = Random.Range(minTime, maxTime);
-            yield return new WaitForSeconds(waitTime);
+            yield return new WaitForSeconds(ringInterval);
             PlaySound();
-            NotifyBlindBoy();
-            Debug.Log($"Play sound after {waitTime} seconds");
+
+            if (!bindBoyInteractable.IsFollowing())
+            {
+                NotifyBlindBoy();
+            }
         }
     }
 
