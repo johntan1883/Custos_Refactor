@@ -48,3 +48,5 @@ MonoBehaviour:
   BarkToInteractSoundClip: {fileID: 8300000, guid: 14708c26ac9840e4387ef5053c3cff13, type: 3}
   TollerBellSoundClip: {fileID: 8300000, guid: 21803c735891d6146bdc87e1ecef5b37, type: 3}
   CrateBreakSoundClip: {fileID: 8300000, guid: b95d34ea4008e784ab4f96deeb31f1b7, type: 3}
+  DoorOpenSoundClip: {fileID: 8300000, guid: db2e887b0446f3d408d57e49938ceef8, type: 3}
+  HorrorSoundClip: {fileID: 8300000, guid: 9260ec0e3f253cf408620d30a4085c98, type: 3}

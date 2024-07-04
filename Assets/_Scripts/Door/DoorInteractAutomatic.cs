@@ -12,16 +12,23 @@ public class DoorInteractAutomatic : MonoBehaviour
     private bool isBlindBoyInRange = false;
     private bool canOpenDoor = false;
     private GameObject keyGameObject;
+    private AudioClip doorOpenSFX;
+    private bool doorOpened = false;
 
     private void Awake()
     {
         doorGO = doorGameObject.GetComponent<IDoor>();
         doorV = doorVisual.GetComponent<IDoor>();
+
+        doorOpenSFX = GameAssets.Instance.DoorOpenSoundClip;
     }
 
     private void Update()
     {
-        
+        if (!doorOpened && isBlindBoyInRange && canOpenDoor)
+        {
+            OpenDoor();
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collider)
@@ -33,22 +40,19 @@ public class DoorInteractAutomatic : MonoBehaviour
 
         if (collider.GetComponent<KeyInteractable>() != null)
         {
-            //isKeyInRange = true;
             keyGameObject = collider.gameObject;
             canOpenDoor = keyGameObject.GetComponent<KeyInteractable>().BlindBoyIsHoldingKey();
         }
-
-        CheckAndOpenDoor();
     }
 
-    private void CheckAndOpenDoor()
+    private void OpenDoor()
     {
-        if (isBlindBoyInRange && canOpenDoor)
-        {
-            doorGO.OpenDoor();
-            doorV.OpenDoor();
-            DestroyKey();
-        }
+        doorGO.OpenDoor();
+        doorV.OpenDoor();
+        SoundFXManager.Instance.PlaySoundFXClip(doorOpenSFX, transform, 1f);
+        DestroyKey();
+        DisableScript();
+        doorOpened = true; // Ensure this only happens once
     }
 
     private void DestroyKey()
@@ -59,4 +63,8 @@ public class DoorInteractAutomatic : MonoBehaviour
         }
     }
 
+    private void DisableScript()
+    {
+        this.enabled = false;
+    }
 }

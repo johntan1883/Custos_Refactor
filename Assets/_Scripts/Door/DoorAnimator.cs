@@ -5,10 +5,12 @@ using UnityEngine;
 public class DoorAnimator : MonoBehaviour, IDoor
 {
     private Animator doorAnimator;
+    
 
     private void Awake()
     {
         doorAnimator = GetComponent<Animator>();
+        
     }
 
     public void CloseDoor()
@@ -19,6 +21,7 @@ public class DoorAnimator : MonoBehaviour, IDoor
     public void OpenDoor()
     {
         doorAnimator.SetBool("Open", true);
+        
     }
 
     public void ToggleDoor()
