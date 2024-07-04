@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Crate : MonoBehaviour, IInteractable
 {
+    [SerializeField] private bool spawnKey = false;
+    [SerializeField] private GameObject keyPrefab;
     private PlayerInteractablUI playerInteractablUI;
     private AudioClip crateBreakSFX;
 
@@ -31,6 +34,18 @@ public class Crate : MonoBehaviour, IInteractable
 
         playerInteractablUI.HideInteractableIcon();
 
+        SpawnKey();
+
         Destroy(this.gameObject);
+    }
+
+    private void SpawnKey()
+    {
+        if (spawnKey == true)
+        {
+            Instantiate(keyPrefab,transform.position, Quaternion.identity);
+            Debug.Log("Key spawned");
+            spawnKey = false;
+        }
     }
 }
