@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorTrigger : MonoBehaviour
+public class SeparateRoomCameraTrigger : MonoBehaviour
 {
     public enum TriggerType { Enter, Exit }
     public TriggerType triggerType;
@@ -27,12 +27,12 @@ public class DoorTrigger : MonoBehaviour
             {
                 if (triggerType == TriggerType.Enter)
                 {
-                    cameraBoundsManager.SetRoomCameraBounds(targetRoomIndex);
+                    cameraBoundsManager.SetSeparateRoomCameraBounds(targetRoomIndex);
                 }
                 else if (triggerType == TriggerType.Exit)
                 {
                     // Assuming the current room is the same as targetRoomIndex
-                    cameraBoundsManager.SetRoomCameraBounds(targetRoomIndex);
+                    cameraBoundsManager.SetSeparateRoomCameraBounds(targetRoomIndex);
                 }
             }
             else
