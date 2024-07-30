@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 637515a2035ced44b8dd7bbb017a1ff6
-      internalID: 1996919817
+      spriteID: ca39683a1def1234c8dcaf667d1d9efe
+      internalID: -1895220586
       vertices: []
       indices: 
       edges: []
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b9ea0c1b4af23349b3e21d7a433ec6a
-      internalID: -197708753
+      spriteID: 42b5831b8fb1d9043ba5188dcaddeeea
+      internalID: 945501551
       vertices: []
       indices: 
       edges: []
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca25e7ab80378ba44a11f5c59d8fa3a0
-      internalID: 597947737
+      spriteID: ac5bcc7effc4b9e41a937491bbdb1788
+      internalID: -1591082269
       vertices: []
       indices: 
       edges: []
@@ -174,8 +174,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04d7f1f259e0c5f408da902f598bc10e
-      internalID: -471707256
+      spriteID: c62b77ff81f24ea48a3b72f513b82ded
+      internalID: 818316989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FixedHangStand_4
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 42
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8547d885ac83f4742a92f48435076454
+      internalID: 942420443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FixedHangStand_5
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 42
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddd42974aaa3b543bb9a893cded00af
+      internalID: -1475954560
       vertices: []
       indices: 
       edges: []
@@ -191,10 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FixedHangStand_0: 1996919817
-      FixedHangStand_1: -197708753
-      FixedHangStand_2: 597947737
-      FixedHangStand_3: -471707256
+      FixedHangStand_0: -1895220586
+      FixedHangStand_1: 945501551
+      FixedHangStand_2: -1591082269
+      FixedHangStand_3: 818316989
+      FixedHangStand_4: 942420443
+      FixedHangStand_5: -1475954560
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
