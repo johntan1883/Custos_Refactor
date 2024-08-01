@@ -21,4 +21,5 @@ public class GameAssets : MonoBehaviour
     public AudioClip CrateBreakSoundClip;
     public AudioClip DoorOpenSoundClip;
     public AudioClip HorrorSoundClip;
+    public AudioClip SpottedPlayerSoundClip;
 }

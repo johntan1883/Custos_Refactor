@@ -74,14 +74,17 @@ public class Toller_MovementController : MonoBehaviour
     {
         if (isChasing)
         {
-            if (transform.position.x > playerTransform.position.x) //if the player is at the left of the enemy
+            if (playerTransform != null)
             {
-                transform.position += Vector3.left * chaseSpeed * Time.deltaTime;
-            }
+                if (transform.position.x > playerTransform.position.x) //if the player is at the left of the enemy
+                {
+                    transform.position += Vector3.left * chaseSpeed * Time.deltaTime;
+                }
 
-            if (transform.position.x < playerTransform.position.x) //if the player is at the left of the enemy
-            {
-                transform.position += Vector3.right * chaseSpeed * Time.deltaTime;
+                if (transform.position.x < playerTransform.position.x) //if the player is at the left of the enemy
+                {
+                    transform.position += Vector3.right * chaseSpeed * Time.deltaTime;
+                }
             }
         }
     }
