@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
     private GameInput gameInput;
 
     public static Player Instance { get; private set; }
+    public bool isHidden;
 
     private float moveInput;
     private float jumpTimeCounter;

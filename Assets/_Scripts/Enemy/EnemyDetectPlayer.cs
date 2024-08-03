@@ -7,11 +7,16 @@ public class EnemyDetectPlayer : MonoBehaviour
 {
     public event Action OnDetectPlayer; //delegate that return void
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            OnDetectPlayer?.Invoke();
+            Player player = collision.GetComponent<Player>();
+
+            if (player != null && !player.isHidden)
+            {
+                OnDetectPlayer?.Invoke();
+            }
         }
     }
 }
