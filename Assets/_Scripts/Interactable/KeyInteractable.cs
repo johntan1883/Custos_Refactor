@@ -22,7 +22,7 @@ public class KeyInteractable : MonoBehaviour, IInteractable
 
     public void Interact(Player player)
     {
-        player.GrabAndDrop(gameObject);
+        player.Grab(gameObject);
         playerInteractablUI.HideInteractableIcon();
     }
 

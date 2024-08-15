@@ -60,4 +60,9 @@ public class GameInput : MonoBehaviour
     {
         return playerInputActions.PauseMenu.Pause.WasPressedThisFrame();
     }
+
+    public bool GetDropInput()
+    {
+        return playerInputActions.Player.Drop.WasPressedThisFrame();
+    }
 }

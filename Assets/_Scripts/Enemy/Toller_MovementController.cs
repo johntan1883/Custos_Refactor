@@ -16,6 +16,11 @@ public class Toller_MovementController : MonoBehaviour
     private EnemyDetectPlayer detectPlayer;
     private bool isChasing;
 
+    private void Awake()
+    {
+        playerTransform = FindObjectOfType<Player>().transform;
+    }
+
     private void Start()
     {
         Flip();

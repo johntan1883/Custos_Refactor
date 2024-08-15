@@ -33,6 +33,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Drop",
+                    "type": "Button",
+                    "id": "cfb5dce8-59f7-4bf2-921e-d4537fded9c9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "BarkToFollow",
                     "type": "Button",
                     "id": "60876169-dc60-4a43-9be2-c0a578506b30",
@@ -148,6 +157,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "BarkToInteract",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d826bb32-af54-460d-b79c-8d282e2ac411",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drop",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

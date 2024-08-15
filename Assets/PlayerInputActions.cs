@@ -55,6 +55,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""Drop"",
+                    ""type"": ""Button"",
+                    ""id"": ""cfb5dce8-59f7-4bf2-921e-d4537fded9c9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""BarkToFollow"",
                     ""type"": ""Button"",
                     ""id"": ""60876169-dc60-4a43-9be2-c0a578506b30"",
@@ -172,6 +181,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""BarkToInteract"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d826bb32-af54-460d-b79c-8d282e2ac411"",
+                    ""path"": ""<Keyboard>/g"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Drop"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -211,6 +231,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
+        m_Player_Drop = m_Player.FindAction("Drop", throwIfNotFound: true);
         m_Player_BarkToFollow = m_Player.FindAction("BarkToFollow", throwIfNotFound: true);
         m_Player_BarkToInteract = m_Player.FindAction("BarkToInteract", throwIfNotFound: true);
         // PauseMenu
@@ -280,6 +301,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_Interact;
+    private readonly InputAction m_Player_Drop;
     private readonly InputAction m_Player_BarkToFollow;
     private readonly InputAction m_Player_BarkToInteract;
     public struct PlayerActions
@@ -289,6 +311,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
+        public InputAction @Drop => m_Wrapper.m_Player_Drop;
         public InputAction @BarkToFollow => m_Wrapper.m_Player_BarkToFollow;
         public InputAction @BarkToInteract => m_Wrapper.m_Player_BarkToInteract;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
@@ -309,6 +332,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
+            @Drop.started += instance.OnDrop;
+            @Drop.performed += instance.OnDrop;
+            @Drop.canceled += instance.OnDrop;
             @BarkToFollow.started += instance.OnBarkToFollow;
             @BarkToFollow.performed += instance.OnBarkToFollow;
             @BarkToFollow.canceled += instance.OnBarkToFollow;
@@ -328,6 +354,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
+            @Drop.started -= instance.OnDrop;
+            @Drop.performed -= instance.OnDrop;
+            @Drop.canceled -= instance.OnDrop;
             @BarkToFollow.started -= instance.OnBarkToFollow;
             @BarkToFollow.performed -= instance.OnBarkToFollow;
             @BarkToFollow.canceled -= instance.OnBarkToFollow;
@@ -402,6 +431,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnDrop(InputAction.CallbackContext context);
         void OnBarkToFollow(InputAction.CallbackContext context);
         void OnBarkToInteract(InputAction.CallbackContext context);
     }

@@ -83,6 +83,7 @@ public class Player : MonoBehaviour
             Interact();
             BarkToFollow();
             BarkToInteract();
+            HandleDrop();
         }
     }
 
@@ -144,6 +145,14 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void HandleDrop()
+    {
+        if (gameInput.GetDropInput())
+        {
+            Drop();
+        }
+    }
+
     private void Interact()
     {
         if (gameInput.GetInteractInput())
@@ -173,7 +182,7 @@ public class Player : MonoBehaviour
     }
 
 
-    public void GrabAndDrop(GameObject interactableObject)
+    public void Grab(GameObject interactableObject)
     {
         if (grabbedObject == null)
         {
@@ -183,22 +192,38 @@ public class Player : MonoBehaviour
             grabbedObject.transform.SetParent(grabPoint);
             Debug.Log(grabbedObject + "is set to child");
         } 
-        else
+        //else
+        //{
+        //    if (grabbedObject.TryGetComponent(out KeyInteractable keyInteractable))
+        //    {
+        //        keyInteractable.ShowInteractableIcon();
+        //    }
+
+        //    if (grabbedObject.TryGetComponent(out BlindBoyInteractable blindBoyInteractable))
+        //    {
+        //        blindBoyInteractable.ShowInteractableIcon();
+        //    }
+
+        //    grabbedObject.GetComponent<Rigidbody2D>().isKinematic = false;
+        //    grabbedObject.transform.SetParent(null);
+        //    grabbedObject = null;
+        //    Debug.Log(interactableObject + "'s parent is set to null");
+        //}
+    }
+
+    private void Drop()
+    {
+        if (grabbedObject != null)
         {
-            if (grabbedObject.TryGetComponent(out KeyInteractable keyInteractable))
-            {
-                keyInteractable.ShowInteractableIcon();
-            }
-
-            if (grabbedObject.TryGetComponent(out BlindBoyInteractable blindBoyInteractable))
-            {
-                blindBoyInteractable.ShowInteractableIcon();
-            }
-
+            // Drop the currently grabbed object
             grabbedObject.GetComponent<Rigidbody2D>().isKinematic = false;
             grabbedObject.transform.SetParent(null);
             grabbedObject = null;
-            Debug.Log(interactableObject + "'s parent is set to null");
+            Debug.Log("Dropped the grabbed object.");
+        }
+        else
+        {
+            Debug.Log("No object to drop.");
         }
     }
 
