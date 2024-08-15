@@ -18,7 +18,7 @@ public class PauseMenu : MonoBehaviour
             Debug.Log("gameInput is not found");
         }
     }
-
+    //Pause Menu
     private void Start()
     {
         pauseMenu.SetActive(false);
@@ -62,5 +62,14 @@ public class PauseMenu : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Succesfully exit to desktop");
+    }
+    //Main Menu
+    public void Chapter1()
+    {
+        SceneManager.LoadScene("Cutscene 2");
+    }
+    public void Chapter2()
+    {
+        SceneManager.LoadScene("Cutscene 2");
     }
 }
