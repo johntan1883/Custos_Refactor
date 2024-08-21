@@ -80,6 +80,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Scroll"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""9f121242-5726-4b3a-8ec7-9a57b2234ecc"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -192,6 +201,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Drop"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8e12dd2e-5756-487c-97fc-8c273b36098a"",
+                    ""path"": ""<Mouse>/scroll/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Scroll"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -234,6 +254,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player_Drop = m_Player.FindAction("Drop", throwIfNotFound: true);
         m_Player_BarkToFollow = m_Player.FindAction("BarkToFollow", throwIfNotFound: true);
         m_Player_BarkToInteract = m_Player.FindAction("BarkToInteract", throwIfNotFound: true);
+        m_Player_Scroll = m_Player.FindAction("Scroll", throwIfNotFound: true);
         // PauseMenu
         m_PauseMenu = asset.FindActionMap("PauseMenu", throwIfNotFound: true);
         m_PauseMenu_Pause = m_PauseMenu.FindAction("Pause", throwIfNotFound: true);
@@ -304,6 +325,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Drop;
     private readonly InputAction m_Player_BarkToFollow;
     private readonly InputAction m_Player_BarkToInteract;
+    private readonly InputAction m_Player_Scroll;
     public struct PlayerActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -314,6 +336,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public InputAction @Drop => m_Wrapper.m_Player_Drop;
         public InputAction @BarkToFollow => m_Wrapper.m_Player_BarkToFollow;
         public InputAction @BarkToInteract => m_Wrapper.m_Player_BarkToInteract;
+        public InputAction @Scroll => m_Wrapper.m_Player_Scroll;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -341,6 +364,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @BarkToInteract.started += instance.OnBarkToInteract;
             @BarkToInteract.performed += instance.OnBarkToInteract;
             @BarkToInteract.canceled += instance.OnBarkToInteract;
+            @Scroll.started += instance.OnScroll;
+            @Scroll.performed += instance.OnScroll;
+            @Scroll.canceled += instance.OnScroll;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -363,6 +389,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @BarkToInteract.started -= instance.OnBarkToInteract;
             @BarkToInteract.performed -= instance.OnBarkToInteract;
             @BarkToInteract.canceled -= instance.OnBarkToInteract;
+            @Scroll.started -= instance.OnScroll;
+            @Scroll.performed -= instance.OnScroll;
+            @Scroll.canceled -= instance.OnScroll;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -434,6 +463,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnDrop(InputAction.CallbackContext context);
         void OnBarkToFollow(InputAction.CallbackContext context);
         void OnBarkToInteract(InputAction.CallbackContext context);
+        void OnScroll(InputAction.CallbackContext context);
     }
     public interface IPauseMenuActions
     {

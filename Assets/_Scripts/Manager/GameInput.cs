@@ -15,6 +15,11 @@ public class GameInput : MonoBehaviour
         playerInputActions.PauseMenu.Enable();
     }
 
+    private void Update()
+    {
+        
+    }
+
     //Returning the x value of move input of player
     public float GetMovementX()
     {
