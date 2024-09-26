@@ -550,9 +550,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Kurtis Khoo - Game Design, Art\nTan Li Jun - Programming, Game Design\nHitopakorn
-    - Background art\nCoolSoundFX & Pixabay - Sound\nMusic Names - Untitled #9 (Smasklfa
-    1) & Lux Aeterna\n "
+  m_text: "Kurtis Khoo, Babanagi - Game Design, Art\nTan Li Jun - Programming, Game
+    Design\nHitopakorn - Background art\nCoolSoundFX & Pixabay - Sound\nMusic Names
+    - Untitled #9 (Smasklfa 1) & Lux Aeterna\n "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf078dabb64ed5841bc8e37e30231aa7, type: 2}
   m_sharedMaterial: {fileID: -5244459937963718659, guid: bf078dabb64ed5841bc8e37e30231aa7, type: 2}
@@ -2135,7 +2135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1055953782
 RectTransform:
   m_ObjectHideFlags: 0
