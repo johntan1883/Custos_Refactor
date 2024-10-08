@@ -8,7 +8,8 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     private GameInput gameInput;
     public static bool IsPaused;
-
+    public GameObject[] background;
+    private int index;
     private void Awake()
     {
         gameInput = FindAnyObjectByType<GameInput>();
@@ -22,6 +23,8 @@ public class PauseMenu : MonoBehaviour
     private void Start()
     {
         pauseMenu.SetActive(false);
+        index = PlayerPrefs.GetInt("index", 0);
+        SetActiveBackground();
     }
 
     private void Update()
@@ -39,6 +42,26 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    public void Next()
+    {
+
+        index++;
+
+        if (index >= background.Length) index = 0;
+        SetActiveBackground();
+
+    }
+
+    public void Previous()
+    {
+
+        index--;
+
+        if (index < 0)
+            index = background.Length - 1;
+        SetActiveBackground();
+
+    }
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
@@ -72,4 +95,16 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Cutscene 2");
     }
+    void SetActiveBackground()
+    {
+
+        for (int i = 0; i < background.Length; i++)
+        {
+            background[i].SetActive(i == index);
+        }
+
+        PlayerPrefs.SetInt("index", index);
+        PlayerPrefs.Save();
+    }
 }
+
