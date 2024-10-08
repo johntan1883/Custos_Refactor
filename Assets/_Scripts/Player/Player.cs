@@ -24,7 +24,10 @@ public class Player : MonoBehaviour
 
     [Header("Grab & Drop")]
     [SerializeField] private Transform grabPoint;
+    [SerializeField] private GameObject cantDropHereUIGameObject;
     private GameObject grabbedObject;
+    private bool isInTheBushes = false;
+    
 
     [Header("Bark")]
     [SerializeField] private Vector2 soundDetectArea;
@@ -181,7 +184,6 @@ public class Player : MonoBehaviour
         }
     }
 
-
     public void Grab(GameObject interactableObject)
     {
         if (grabbedObject == null)
@@ -213,7 +215,12 @@ public class Player : MonoBehaviour
 
     private void Drop()
     {
-        if (grabbedObject != null)
+        if (grabbedObject != null & isInTheBushes == true)
+        {
+            StartCoroutine(ShowCantDropHereUI());
+        }
+
+        if (grabbedObject != null & isInTheBushes == false)
         {
             // Drop the currently grabbed object
             grabbedObject.GetComponent<Rigidbody2D>().isKinematic = false;
@@ -273,6 +280,26 @@ public class Player : MonoBehaviour
             blindBoy.StartInteractingWithObject();
         }
     }
+    
+
+    public void PlayerIsInTheBushes()
+    {
+        isInTheBushes = true;
+    }
+
+    public void PlayerIsNotInTheBushes()
+    {
+        isInTheBushes = false;
+    }
+
+    private IEnumerator ShowCantDropHereUI()
+    {
+        cantDropHereUIGameObject.transform.position = transform.position;
+        cantDropHereUIGameObject.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        cantDropHereUIGameObject.SetActive(false);
+    }
+
     //Visualize the groundCheckRadius
     private void OnDrawGizmos()
     {

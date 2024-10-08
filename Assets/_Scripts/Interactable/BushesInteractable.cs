@@ -8,8 +8,16 @@ public class BushesInteractable : MonoBehaviour, IInteractable
     [SerializeField] private Transform teleportDestination;
     [SerializeField] private GameObject [] boundariesArray;
 
+    private BushesHidingEffect bushesHidingEffect;
+    private CameraZoomManager cameraZoomManager;
     private bool hasInteracted;
-    
+
+    private void Awake()
+    {
+        bushesHidingEffect = GetComponent<BushesHidingEffect>();
+        cameraZoomManager = FindObjectOfType<CameraZoomManager>();
+    }
+
     public void BlindBoyInteract(BlindBoy blindBoy)
     {
         
@@ -17,6 +25,13 @@ public class BushesInteractable : MonoBehaviour, IInteractable
 
     public void Interact(Player player)
     {
+        //Check if the camera is zooming to prevent spamming interaction
+        if (cameraZoomManager.IsZooming)
+        {
+            Debug.Log("Interaction blocked : Cameara is zooming");
+            return;
+        }
+
         SpriteRenderer playerSprite = player.GetComponentInChildren<SpriteRenderer>();
 
         if (playerSprite != null)
@@ -29,6 +44,10 @@ public class BushesInteractable : MonoBehaviour, IInteractable
                 EnableBoundaries();
                 playerSprite.sortingOrder = -2; //Player is hiding behind the bushes
                 player.isHidden = true;
+
+                //Enable dark panel
+                bushesHidingEffect.ToggleHidingEffect(true);
+
                 Debug.Log("Player is hiding in the bushes: " + hasInteracted);
             }
             else
@@ -36,8 +55,10 @@ public class BushesInteractable : MonoBehaviour, IInteractable
                 DisableBoundaries();
                 playerSprite.sortingOrder = 0; //Player came out from the bushes
                 player.isHidden = false;
-            }
 
+                //Disable dark panel
+                bushesHidingEffect.ToggleHidingEffect(false);
+            }
         }
     }
 

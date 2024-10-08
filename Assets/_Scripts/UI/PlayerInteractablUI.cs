@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerInteractablUI : MonoBehaviour
 {
     [SerializeField] private Transform InteractableIcon;
+    
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
