@@ -44,9 +44,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Next()
     {
-
         index++;
-
         if (index >= background.Length) index = 0;
         SetActiveBackground();
 
@@ -89,7 +87,7 @@ public class PauseMenu : MonoBehaviour
     //Main Menu
     public void Chapter1()
     {
-        SceneManager.LoadScene("Cutscene 2");
+        SceneManager.LoadScene("Level 1");
     }
     public void Chapter2()
     {
@@ -106,5 +104,6 @@ public class PauseMenu : MonoBehaviour
         PlayerPrefs.SetInt("index", index);
         PlayerPrefs.Save();
     }
+
 }
 
